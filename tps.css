@@ -1,0 +1,114 @@
+body {
+  background-color: #ffffff;
+  text-align:center;
+}
+
+#txtSend {
+  color:#ffffff;
+  text-align:center;
+}
+
+#contImg {
+  width: 44vh;
+  height: 33vh;
+  margin-top: 0.05vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#slideImg {
+  height: 33vh;
+  margin: 0 auto;
+}
+
+#btnStart {
+  width: 30vw;
+  height: 4vh;
+  margin: 0 auto;
+  margin-top: 0.5vh;
+  font-size: 2.5vh;
+  text-align:center;
+  color: #ffffff;
+  background-color: #919191;
+  user-select: none;
+}
+
+#btnNext {
+  width: 30vw;
+  height: 4vh;
+  margin-top: 4vh;
+  margin-left:auto;
+  text-align: center;
+  font-size: 2.5vh;
+  color: #ffffff;
+  background-color:  #ffffff;
+  user-select: none;
+}
+
+#contDrg1 {
+  position: relative;
+  width: 20vh;
+  height: 40vh;
+  margin: 0 auto;
+  margin-top: 2vh;
+  background-color: #919191;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#contDrg2 {
+  position: absolute;
+    top: 5%;
+    left: 5%;
+  width: 18vh;
+  height: 36vh;
+  /* color:  #919191; */
+  color:   #ffffff;
+  font-size: 80%;
+  text-align: left;
+  background-color: #ffffff;
+  border-color: #111111;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.hline {
+  position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+  background-color: #111111;
+}
+
+.vline {
+  position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+  background-color: #111111;
+}
+
+.draggable {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  border-radius: 100px;
+  background-color: #5555ff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

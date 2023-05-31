@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@jspsych/plugin-browser-check": "^1.0.2"
+  }
+}
