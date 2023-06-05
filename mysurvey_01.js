@@ -1,13 +1,14 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import {getDatabase, ref, set, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+require('dotenv').config();
 const firebaseConfig = {
-  apiKey: "AIzaSyDQQIudfNENPU7UpSKMixlAm5g4wCmiw9k",
+  apiKey: FIREBASE_API_KEY,
   authDomain: "websldr.firebaseapp.com",
-  databaseURL: "https://websldr-default-rtdb.asia-southeast1.firebasedatabase.app/",
+  databaseURL: DATABASE_URL,
   projectId: "websldr",
   storageBucket: "websldr.appspot.com",
-  messagingSenderId: "1035787511468",
-  appId: "1:1035787511468:web:ee62d3de4d557c9456a109"
+  messagingSenderId: MESSAGING_SENDER_ID,
+  appId: APP_ID
 };
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
