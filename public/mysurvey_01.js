@@ -1,5 +1,7 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import {getDatabase, ref, set, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+// firebase deploy --only hosting,storage,firestore
+
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "websldr.firebaseapp.com",
