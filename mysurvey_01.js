@@ -2,12 +2,12 @@ import {initializeApp} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-
 import {getDatabase, ref, set, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
 require('dotenv').config();
 const firebaseConfig = {
-  apiKey: FIREBASE_API_KEY,
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "websldr.firebaseapp.com",
-  databaseURL: DATABASE_URL,
+  databaseURL: process.env.DATABASE_URL,
   projectId: "websldr",
   storageBucket: "websldr.appspot.com",
-  messagingSenderId: MESSAGING_SENDER_ID,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
   appId: APP_ID
 };
 var firebase = initializeApp(firebaseConfig);
