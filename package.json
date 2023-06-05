@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@jspsych/plugin-browser-check": "^1.0.2",
+    "dotenv": "^16.1.4"
+  },
+  "scripts": {
+    "build": "command_to_build"
+  }  
+}
