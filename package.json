@@ -5,5 +5,5 @@
   },
   "scripts": {
     "build": "command_to_build"
-  }  
+  }
 }
