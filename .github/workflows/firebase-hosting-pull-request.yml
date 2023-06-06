@@ -9,11 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-<<<<<<< HEAD
-=======
-      - run: npm install -g firebase-tools && firebase experiments:enable webframeworks      
-      - run: npm ci && npm run build
->>>>>>> 9d2f04462d90e0408cf1d1a273e083934d1e9113
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
