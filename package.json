@@ -5,6 +5,20 @@
     "uniq": "^1.0.1"
   },
   "scripts": {
-    "build": "firebase deploy --only hosting,storage,firestore"
-  }
+    "build": ""
+  },
+  "name": "websldr",
+  "description": "https://websldr.web.app/",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiray3/websldr.git"
+  },
+  "author": "Akira Yoshida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akiray3/websldr/issues"
+  },
+  "homepage": "https://github.com/akiray3/websldr#readme"
 }
