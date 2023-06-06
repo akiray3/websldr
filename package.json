@@ -5,11 +5,5 @@
     "uniq": "^1.0.1"
   },
   "scripts": {
-    "start": "nest start",
-    "build": "nest build",
-    "test": "jest",
-    "local-start": "env-cmd -f .env npm run start",
-    "local-build": "env-cmd -f .env npm run build",
-    "local-test": "env-cmd -f .env.testing npm run test",
   }
 }
