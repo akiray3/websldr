@@ -1,8 +1,8 @@
 {
   "functions": [
     {
-      "source": "myfunc",
-      "codebase": "myfunc",
+      "source": "functions",
+      "codebase": "functions",
       "ignore": [
         "node_modules",
         ".git",

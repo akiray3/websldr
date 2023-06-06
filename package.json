@@ -10,7 +10,6 @@
   "name": "websldr",
   "description": "https://websldr.web.app/",
   "version": "1.0.0",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akiray3/websldr.git"
