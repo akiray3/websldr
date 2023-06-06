@@ -2,13 +2,13 @@ import {initializeApp} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-
 import {getDatabase, ref, set, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
 // firebase deploy --only hosting,storage,firestore
 const firebaseConfig = {
-  apiKey: "AIzaSyDQQIudfNENPU7UpSKMixlAm5g4wCmiw9k",
+  apiKey: process.env.MY_FIREBASE_API_KEY,
   authDomain: "websldr.firebaseapp.com",
-  databaseURL: "https://websldr-default-rtdb.asia-southeast1.firebasedatabase.app/",
+  databaseURL: process.env.MY_DATABASE_URL,
   projectId: "websldr",
   storageBucket: "websldr.appspot.com",
-  messagingSenderId: "1035787511468",
-  appId: "1:1035787511468:web:ee62d3de4d557c9456a109"
+  messagingSenderId: process.env.MY_MESSAGING_SENDER_ID,
+  appId: process.env.MY_APP_ID
 };
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
