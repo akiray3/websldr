@@ -1,5 +1,6 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import {getDatabase, ref, set, update} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDQQIudfNENPU7UpSKMixlAm5g4wCmiw9k",
   authDomain: "websldr.firebaseapp.com",
@@ -9,9 +10,9 @@ const firebaseConfig = {
   messagingSenderId: "1035787511468",
   appId: "1:1035787511468:web:ee62d3de4d557c9456a109"
 };
+
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
-
 var time_date = new Date();
 var nowmonth = time_date.getMonth() + 1
 var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0') + '' + time_date.getDate() + '' + time_date.getHours().toString().padStart(2, '0') + '' + time_date.getMinutes().toString().padStart(2, '0') + '' + time_date.getSeconds().toString().padStart(2, '0');
@@ -65,4 +66,3 @@ var survey01 = {
 };
 // jsPsych.run([browsercheck, survey01]);
 jsPsych.run([survey01]);
-
