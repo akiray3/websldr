@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "websldr.appspot.com",
   messagingSenderId: "1035787511468",
   appId: "1:1035787511468:web:ee62d3de4d557c9456a109"
-};
+};５
 
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
@@ -61,7 +61,7 @@ var survey01 = {
   title: '',
   button_label_next: '次へ',
   button_label_back: '戻る',
-  button_label_finish: '次へ',
+  button_label_finish: '次のセクション',
   required_question_label: '',
   on_finish: function () {
     set(ref(db, exp_id), {
