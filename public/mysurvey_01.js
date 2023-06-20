@@ -15,7 +15,7 @@ var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
 var time_date = new Date();
 var nowmonth = time_date.getMonth() + 1
-var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0') + '' + time_date.getDate() + '' + time_date.getHours().toString().padStart(2, '0') + '' + time_date.getMinutes().toString().padStart(2, '0') + '' + time_date.getSeconds().toString().padStart(2, '0');
+var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0') + '' + time_date.getDate().padStart(2, '0') + '' + time_date.getHours().toString().padStart(2, '0') + '' + time_date.getMinutes().toString().padStart(2, '0') + '' + time_date.getSeconds().toString().padStart(2, '0');
 
 var jsPsych = initJsPsych();
 

@@ -482,7 +482,7 @@ var survey02 = {
   button_label_finish: '終了',
   required_question_label: '',
   on_finish: function () {
-    set(ref(db, exp_id), {
+    update(ref(db, exp_id), {
       survey02: jsPsych.data.get().values()
     }).then(function() {
       window.location.href = 'finishing.html';
