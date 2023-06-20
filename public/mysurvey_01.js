@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "websldr.appspot.com",
   messagingSenderId: "1035787511468",
   appId: "1:1035787511468:web:ee62d3de4d557c9456a109"
-};５
+};
 
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
