@@ -71,5 +71,5 @@ var survey01 = {
     })
   }
 };
-// jsPsych.run([browsercheck, survey01]);
-jsPsych.run([survey01]);
+jsPsych.run([browsercheck, survey01]);
+// jsPsych.run([survey01]);
