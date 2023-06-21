@@ -400,7 +400,7 @@ var survey02 = {
     [
       {
         type: 'html',
-        prompt: '【質問セクション(5/5)】あと少しです！<br>この質問票は、あなたが何らかの感情を経験したときに、どのように反応するかをさまざまな角度から測るために作られています。<br>以下の項目について、あなたの日常生活にどの程度あてはまるかを点数で答えてください。'
+        prompt: '【質問セクション(5/5)】あと少しです！<br><br>この質問票は、あなたが何らかの感情を経験したときに、どのように反応するかをさまざまな角度から測るために作られています。<br>以下の項目について、あなたの日常生活にどの程度あてはまるかを点数で答えてください。'
       },
       {
         type: 'multi-choice', prompt: '01. すぐに幸せな気持ちになるほうだ', name: 'Q5_perss01',
@@ -443,35 +443,39 @@ var survey02 = {
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '11. ポジティブな気分をとても強く感じる', name: 'Q5_perss11',
+        type: 'multi-choice', prompt: '11. 私はこのアンケートに真面目に回答していない', name: 'Q6_trust_checker',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '12. 不幸なときはいつも、それをとても強く感じる', name: 'Q5_perss12',
+        type: 'multi-choice', prompt: '12. ポジティブな気分をとても強く感じる', name: 'Q5_perss11',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '13. 良い知らせには、すぐに反応する', name: 'Q5_perss13',
+        type: 'multi-choice', prompt: '13. 不幸なときはいつも、それをとても強く感じる', name: 'Q5_perss12',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '14. ネガティブな出来事があると、すぐに悲観的になる', name: 'Q5_perss14',
+        type: 'multi-choice', prompt: '14. 良い知らせには、すぐに反応する', name: 'Q5_perss13',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '15. 長いあいだ熱中したままでいられる', name: 'Q5_perss15',
+        type: 'multi-choice', prompt: '15. ネガティブな出来事があると、すぐに悲観的になる', name: 'Q5_perss14',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '16. 一度ネガティブな気分になると、なかなか抜け出せない', name: 'Q5_perss16',
+        type: 'multi-choice', prompt: '16. 長いあいだ熱中したままでいられる', name: 'Q5_perss15',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '17. 何かに熱中していると、それをとても強く感じる', name: 'Q5_perss17',
+        type: 'multi-choice', prompt: '17. 一度ネガティブな気分になると、なかなか抜け出せない', name: 'Q5_perss16',
         options: perss_chs, required: true
       },
       {
-        type: 'multi-choice', prompt: '18. ネガティブな気分をとても強く感じる', name: 'Q5_perss18',
+        type: 'multi-choice', prompt: '18. 何かに熱中していると、それをとても強く感じる', name: 'Q5_perss17',
+        options: perss_chs, required: true
+      },
+      {
+        type: 'multi-choice', prompt: '19. ネガティブな気分をとても強く感じる', name: 'Q5_perss18',
         options: perss_chs, required: true
       }
     ]
