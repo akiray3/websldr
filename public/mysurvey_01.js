@@ -14,8 +14,14 @@ const firebaseConfig = {
 var firebase = initializeApp(firebaseConfig);
 const db = getDatabase();
 var time_date = new Date();
-var nowmonth = time_date.getMonth() + 1
-var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0') + '' + time_date.getDate().toString().padStart(2, '0') + '' + time_date.getHours().toString().padStart(2, '0') + '' + time_date.getMinutes().toString().padStart(2, '0') + '' + time_date.getSeconds().toString().padStart(2, '0');
+var nowmonth = time_date.getMonth() + 1;
+var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+var id_code_alph = '';
+for (var i = 0; i < 5; i++) {
+  var randomIndex = Math.floor(Math.random() * alphabet.length);
+  id_code_alph += alphabet.charAt(randomIndex);
+}
+var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0') + '' + time_date.getDate().toString().padStart(2, '0') + '' + time_date.getHours().toString().padStart(2, '0') + '' + time_date.getMinutes().toString().padStart(2, '0') + '' + time_date.getSeconds().toString().padStart(2, '0') + id_code_alph;
 
 var jsPsych = initJsPsych();
 
