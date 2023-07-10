@@ -487,7 +487,7 @@ var survey02 = {
   required_question_label: '',
   on_finish: function () {
     update(ref(db, exp_id), {
-      survey02: jsPsych.data.get().values()
+      survey: jsPsych.data.get().values()
     }).then(function() {
       window.location.href = 'finishing.html';
     })

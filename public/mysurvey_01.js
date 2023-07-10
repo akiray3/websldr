@@ -25,17 +25,17 @@ var exp_id = time_date.getFullYear() + '' + nowmonth.toString().padStart(2, '0')
 
 var jsPsych = initJsPsych();
 
-var browsercheck = {
-  type: jsPsychBrowserCheck,
-  inclusion_function: (data) => {
-    return  data.mobile == true
-  },
-  exclusion_message: (data) => {
-    if(data.mobile == false){
-      return '<p>この調査はスマートフォンからのみ参加できます<br>申し訳ありませんが、お持ちのスマートフォンから<br>再度アクセスしてください</p>';
-    }
-  }
-};
+// var browsercheck = {
+//   type: jsPsychBrowserCheck,
+//   inclusion_function: (data) => {
+//     return  data.mobile == true
+//   },
+//   exclusion_message: (data) => {
+//     if(data.mobile == false){
+//       return '<p>この調査はスマートフォンからのみ参加できます<br>申し訳ありませんが、お持ちのスマートフォンから<br>再度アクセスしてください</p>';
+//     }
+//   }
+// };
 
 const ageset = [...Array(63)].map((_, i) => i + 18);
 var survey01 = {
@@ -70,11 +70,12 @@ var survey01 = {
   button_label_finish: '次のセクション',
   required_question_label: '',
   on_finish: function () {
-    set(ref(db, exp_id), {
-      survey01: jsPsych.data.get().values()
-    }).then(function() {
-      window.location.href = 'tutorial_video.html?exp_id=' + exp_id;
-    })
+    window.location.href = 'tutorial_video.html?exp_id=' + exp_id;
+    // set(ref(db, exp_id), {
+    //   survey01: jsPsych.data.get().values()
+    // }).then(function() {
+    //   window.location.href = 'tutorial_video.html?exp_id=' + exp_id;
+    // })
   }
 };
 // jsPsych.run([browsercheck, survey01]);
